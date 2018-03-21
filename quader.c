@@ -4,6 +4,9 @@
 int main(int argc, char ** argv) {
 	float a, b, c;
 
+if (argc == 4) {
+    
+
 	// Einlesen der Seitenlängen
 	a = atof(argv[1]);
 	b = atof(argv[2]);
@@ -15,9 +18,14 @@ int main(int argc, char ** argv) {
 	oberflaeche += 2.*a*c;
 	oberflaeche += 2.*b*c;
 
-	// Ausgabe
-	printf("Ein Quader mit den Seitenlängen %f, %f und %f hat die Oberfläche %f\n",
+printf("Ein Quader mit den Seitenlängen %f, %f und %f hat die Oberfläche %f\n",
 		a, b, c, oberflaeche);
+}	
+
+else {
+    printf("Es werden 3 Variablen benötigt\n");
+}
+	
 
 	return 0;
 }
