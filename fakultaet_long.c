@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 int main(int argc, char ** argv) {
-	int a, b, c;
+	long a, b, c;
 
 if (argc == 2) {
     
@@ -15,11 +15,11 @@ if (argc == 2) {
 }
 	
 	else if (a == 1) {
-	printf("%i Faktoriell ist 1\n", a);
+	printf("%lu Faktoriell ist 1\n", a);
 
 }
 	else if (a == 0) {
-	printf("%i Faktoriell ist 1\n", a);
+	printf("%lu Faktoriell ist 1\n", a);
 }
 	else {
 	c = 1;
@@ -27,7 +27,7 @@ if (argc == 2) {
 	c *= b;
 
 }	
-	printf("%i Faktoriell ist %i\n",
+	printf("%lu Faktoriell ist %lu\n",
 		a, c);
 	printf("Anzahl der Bytes von zahl: %lu\n", sizeof(a));
 }
@@ -45,7 +45,7 @@ else {
 
 }
 
-//Funktioniert nur bis 12!	
+//Funktioniert nur bis 65!	
 
 	return 0;
 }
